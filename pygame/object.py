@@ -149,7 +149,7 @@ class Slider:
         # Set the mixer volume based on the slider value (normalize to 0.0 - 1.0)
         pygame.mixer.music.set_volume(value / 100.0)
         global turn_sound
-        turn_sound.set_volume(value)
+        turn_sound.set_volume(value/100.0)
 
 
 class Obstacle:
